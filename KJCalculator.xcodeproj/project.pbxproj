@@ -16,6 +16,11 @@
 		6878BE992C72381800EE828F /* KJCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6878BE982C72381800EE828F /* KJCalculatorTests.swift */; };
 		6878BEA32C72381800EE828F /* KJCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6878BEA22C72381800EE828F /* KJCalculatorUITests.swift */; };
 		6878BEA52C72381800EE828F /* KJCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6878BEA42C72381800EE828F /* KJCalculatorUITestsLaunchTests.swift */; };
+		6878BEB32C7239ED00EE828F /* KJFuncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6878BEB22C7239ED00EE828F /* KJFuncButton.swift */; };
+		6878BEB52C723A2500EE828F /* KJBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6878BEB42C723A2500EE828F /* KJBoard.swift */; };
+		6878BEB72C723A5F00EE828F /* KJScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6878BEB62C723A5F00EE828F /* KJScreen.swift */; };
+		6878BEB92C723A8000EE828F /* KJCalculatorEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6878BEB82C723A8000EE828F /* KJCalculatorEngine.swift */; };
+		9B512A1C7357866A9A3E12BA /* Pods_KJCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E41196E8F470D1082BB0858 /* Pods_KJCalculator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E41196E8F470D1082BB0858 /* Pods_KJCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KJCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6878BE7E2C72381500EE828F /* KJCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KJCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6878BE812C72381500EE828F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6878BE832C72381500EE828F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		6878BE9E2C72381800EE828F /* KJCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KJCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6878BEA22C72381800EE828F /* KJCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJCalculatorUITests.swift; sourceTree = "<group>"; };
 		6878BEA42C72381800EE828F /* KJCalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJCalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6878BEB22C7239ED00EE828F /* KJFuncButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJFuncButton.swift; sourceTree = "<group>"; };
+		6878BEB42C723A2500EE828F /* KJBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJBoard.swift; sourceTree = "<group>"; };
+		6878BEB62C723A5F00EE828F /* KJScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJScreen.swift; sourceTree = "<group>"; };
+		6878BEB82C723A8000EE828F /* KJCalculatorEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJCalculatorEngine.swift; sourceTree = "<group>"; };
+		99E34D6718D3AB3E918CA990 /* Pods-KJCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KJCalculator.release.xcconfig"; path = "Target Support Files/Pods-KJCalculator/Pods-KJCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		C9DA93CE5D720E97777D0494 /* Pods-KJCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KJCalculator.debug.xcconfig"; path = "Target Support Files/Pods-KJCalculator/Pods-KJCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B512A1C7357866A9A3E12BA /* Pods_KJCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37A311EDBB589F3F5D92ACED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E41196E8F470D1082BB0858 /* Pods_KJCalculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6878BE752C72381500EE828F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +104,8 @@
 				6878BE972C72381800EE828F /* KJCalculatorTests */,
 				6878BEA12C72381800EE828F /* KJCalculatorUITests */,
 				6878BE7F2C72381500EE828F /* Products */,
+				DF37B67A8DBA6F178338256E /* Pods */,
+				37A311EDBB589F3F5D92ACED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +122,7 @@
 		6878BE802C72381500EE828F /* KJCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				6878BEB12C72398200EE828F /* Class */,
 				6878BE812C72381500EE828F /* AppDelegate.swift */,
 				6878BE832C72381500EE828F /* SceneDelegate.swift */,
 				6878BE852C72381500EE828F /* ViewController.swift */,
@@ -127,6 +151,27 @@
 			path = KJCalculatorUITests;
 			sourceTree = "<group>";
 		};
+		6878BEB12C72398200EE828F /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				6878BEB22C7239ED00EE828F /* KJFuncButton.swift */,
+				6878BEB42C723A2500EE828F /* KJBoard.swift */,
+				6878BEB62C723A5F00EE828F /* KJScreen.swift */,
+				6878BEB82C723A8000EE828F /* KJCalculatorEngine.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		DF37B67A8DBA6F178338256E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9DA93CE5D720E97777D0494 /* Pods-KJCalculator.debug.xcconfig */,
+				99E34D6718D3AB3E918CA990 /* Pods-KJCalculator.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6878BEA82C72381800EE828F /* Build configuration list for PBXNativeTarget "KJCalculator" */;
 			buildPhases = (
+				D9D14621823F96FDBF410A80 /* [CP] Check Pods Manifest.lock */,
 				6878BE7A2C72381500EE828F /* Sources */,
 				6878BE7B2C72381500EE828F /* Frameworks */,
 				6878BE7C2C72381500EE828F /* Resources */,
+				F1B9B09159043C62197FE04A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +300,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D9D14621823F96FDBF410A80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KJCalculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1B9B09159043C62197FE04A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KJCalculator/Pods-KJCalculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KJCalculator/Pods-KJCalculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KJCalculator/Pods-KJCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6878BE7A2C72381500EE828F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,6 +349,10 @@
 			files = (
 				6878BE862C72381500EE828F /* ViewController.swift in Sources */,
 				6878BE822C72381500EE828F /* AppDelegate.swift in Sources */,
+				6878BEB72C723A5F00EE828F /* KJScreen.swift in Sources */,
+				6878BEB92C723A8000EE828F /* KJCalculatorEngine.swift in Sources */,
+				6878BEB32C7239ED00EE828F /* KJFuncButton.swift in Sources */,
+				6878BEB52C723A2500EE828F /* KJBoard.swift in Sources */,
 				6878BE842C72381500EE828F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +525,7 @@
 		};
 		6878BEA92C72381800EE828F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9DA93CE5D720E97777D0494 /* Pods-KJCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +554,7 @@
 		};
 		6878BEAA2C72381800EE828F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99E34D6718D3AB3E918CA990 /* Pods-KJCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
